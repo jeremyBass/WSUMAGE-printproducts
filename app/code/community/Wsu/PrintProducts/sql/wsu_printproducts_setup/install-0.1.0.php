@@ -1,7 +1,7 @@
 <?php
 /* 
  * @category  Event Manager Module
- * @package   Wsu_eventTickets 
+ * @package   Wsu_PrintProducts 
  * @author    Jeremy Bass <jeremy.bass@wsu.edu>
  * @license   MIT/GPL
  * @link N/A 
@@ -26,9 +26,9 @@ $setInfo = $SU_helper->createAttributeSet("Print_Product",
 
 
 /**  tmp samples
- * Creating table wsu_eventtickets
+ * Creating table wsu_printproducts
 
- $table_eventtickets = $installer->getTable('wsu_eventtickets/eventtickets');
+ $table_eventtickets = $installer->getTable('wsu_printproducts/eventtickets');
 $installer->run("
 	DROP TABLE IF EXISTS `{$table_eventtickets}`;
 	CREATE TABLE `{$table_eventtickets}` (
@@ -48,12 +48,12 @@ $installer->run("
 ");
   */
 /* $connection = $this->getConnection();
-$connection->addColumn($this->getTable('wsu_eventtickets/eventtickets'), "spam","TINYINT(1) UNSIGNED DEFAULT 0");
+$connection->addColumn($this->getTable('wsu_printproducts/eventtickets'), "spam","TINYINT(1) UNSIGNED DEFAULT 0");
  
  
 $table = $installer->getConnection()
-    ->newTable($installer->getTable('wsu_eventtickets/eventtickets'))->addIndex($installer->getIdxName(
-            $installer->getTable('wsu_eventtickets/eventtickets'),
+    ->newTable($installer->getTable('wsu_printproducts/eventtickets'))->addIndex($installer->getIdxName(
+            $installer->getTable('wsu_printproducts/eventtickets'),
             array('published_at'),
             Varien_Db_Adapter_Interface::INDEX_TYPE_INDEX
         ),
@@ -122,7 +122,7 @@ $installer->addAttribute(
 			'type'              => 'int',    //backend_type
 			'input'             => 'select', //frontend_input
 			'frontend_class'    => '',
-			'source'            => 'wsu_eventtickets/attribute_source_type',
+			'source'            => 'wsu_printproducts/attribute_source_type',
 			'backend'           => '',
 			'frontend'          => '',
 			'global'            => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_STORE,
