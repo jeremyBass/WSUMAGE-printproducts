@@ -25,7 +25,7 @@
             <product>
                 <type>
                     <printable translate="label" module="wsu_printproducts">
-                        <label>Event</label>
+                        <label>Printable</label>
 						<model>wsu_printproducts/product_type_printable</model>
 						<index_data_retreiver>wsu_printproducts/catalogIndex_data_printable</index_data_retreiver>
                         <!--<price_model>wsu_printproducts/product_price</price_model>-->
