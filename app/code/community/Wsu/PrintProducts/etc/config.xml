@@ -24,16 +24,6 @@
         <catalog>
             <product>
                 <type>
-
-                    <!--<event translate="label" module="wsu_eventtickets">
-                        <label>Event</label>
-                        <model>wsu_eventtickets/product_type_cp</model>
-                        <is_qty>1</is_qty>
-                        <index_data_retreiver>wsu_eventtickets/catalogIndex_data_cp</index_data_retreiver>
-                        <price_model>wsu_eventtickets/product_price</price_model>
-                        <composite>0</composite>
-                    </event>
-					-->
                     <printable translate="label" module="wsu_printproducts">
                         <label>Event</label>
 						<model>wsu_printproducts/product_type_printable</model>
