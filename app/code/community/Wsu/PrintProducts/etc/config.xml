@@ -36,6 +36,16 @@
                 </type>
             </product>
         </catalog>
+		<events>
+		  <catalog_product_new_action>
+			<observers>
+			  <printable>
+				<class>wsu_printproducts/observer</class>
+				<method>catalog_product_new_action</method>
+			  </printable>
+			</observers>
+		  </catalog_product_new_action>
+    </events>
     </global>
     <admin>
         <routers>
